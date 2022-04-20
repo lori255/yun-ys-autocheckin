@@ -125,6 +125,8 @@ def main_handler(str1, str2):
         print(user_info)
         print(notification_info)
         if notification_info['retcode'] != 0:
-            send_message_QiYeVX('{}\n{}'.format('云原神签到失败：', notification_info['message']))
+            # send_message_QiYeVX('{}\n{}'.format('云原神签到失败：', notification_info['message']))
+            print('{}\n{}'.format('云原神签到失败：', notification_info['message']))
         else:
-            send_message_QiYeVX('{}{}\n{}{}'.format('云原神签到：', notification_info['message'], '剩余免费时间(分钟)：', user_info['data']['free_time']['free_time']))
+            # send_message_QiYeVX('{}{}\n{}{}'.format('云原神签到：', notification_info['message'], '剩余免费时间(分钟)：', user_info['data']['free_time']['free_time']))
+            print('{}{}\n{}{}'.format('云原神签到：', notification_info['message'], '剩余免费时间(分钟)：', user_info['data']['free_time']['free_time']))
